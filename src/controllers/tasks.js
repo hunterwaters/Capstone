@@ -42,10 +42,20 @@ const tasksController = {
   userByTasks: async (req, res) => {
     const { id } = req.params;
 
-    const userByTasks = await User.findById(id).populate('user')
+    const userByTasks = await User.findById({_id: id}).populate('user')
 
     res.status(200).json({ userByTasks })
+  },
+  getAllTasks: async (req,res) => {
+    const allTasks = await Task.find()
+    res.status(200).json({ allTasks })
+  },
+  getTaskById: async (req,res) => {
+    const { id } = req.params;
+    const getTaskById = await User.findById({_id: id})
+    res.status(200).json({ getTaskById })
   }
+
 };
 
 module.exports = tasksController;
