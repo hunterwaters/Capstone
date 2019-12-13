@@ -11,26 +11,24 @@
 
 You need to have Node.js already installed to run this app
 
+```git clone https://github.com/ClintPy/Todo-FullStack.git```
+
 In the Project Directory:
 
-```cd client```
-
-Run:
-
-```yarn install```
-
-Then:
-
-```cd..```
 ```cd src```
 ```npm install```
 
-To Install Server
+Wait for the dependencies to install then:
 
-N/B: You need to run the Client and The Server separately.
-I had a slight problem configuring ``concurrently`` npm package
+```cd client```
+```yarn install```
 
-To run tests:
+Wait again for the dependencies to install then:
 
-```cd src```
-```npm run test```
+```cd..```
+
+go back to the ``src\`` folder and:
+rename .env-change file to .env then:
+
+```npm run dev```
+
