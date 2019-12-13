@@ -35,3 +35,26 @@ rename .env-change file to .env then:
 # App Architecture
 
 ![Architecture](./bunny.png)
+
+Developed Using :
+## Node.js 10.16.3
+
+## API Endpoints
+
+| EndPoint                      | Functionality                  |
+| --------------------------    | ------------------------------ |
+| GET /api/v1/users             | Get all users.                 |
+| GET /api/v1/users/<userID>    | Get Specific Users             |
+| POST /api/v1/users            | Add new User.                  |
+| PUT /api/v1/users/<userID>    | Update user.                   |
+| DELETE /api/v1/users/<userID> | Delete user.                   |
+| --------------------------    | ------------------------------ |
+| POST /api/v1/tasks/<userID>   | Add new tasks                  |
+| GET /api/v1/tasks/<userID>    | Get tasks By user              |
+
+## API Server Running at:
+https://bunnny-studio.herokuapp.com/
+
+## Front-End Server Running at:
+https://inspiring-blackwell-ea3fe9.netlify.com/
+
