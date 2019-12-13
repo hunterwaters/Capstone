@@ -32,3 +32,6 @@ rename .env-change file to .env then:
 
 ```npm run dev```
 
+# App Architecture
+
+![Architecture](./bunny.png)
