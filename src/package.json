@@ -6,11 +6,15 @@
   "scripts": {
     "start": "nodemon server.js",
     "test": "cross-env NODE_ENV=test jest --testTimeout=20000",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "client": "yarn start --prefix ./client",
+    "server": "nodemon server.js",
+    "dev": "concurrently --kill-others \"npm run server\" \"npm run client\""
   },
   "author": "Clint Maruti",
   "license": "MIT",
   "devDependencies": {
+    "concurrently": "^5.0.1",
     "cross-env": "^6.0.3",
     "dotenv": "^8.2.0",
     "nodemon": "^2.0.2",
