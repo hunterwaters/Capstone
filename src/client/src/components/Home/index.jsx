@@ -1,8 +1,7 @@
 import React from "react";
 import axios from "axios";
 import { connect } from "react-redux";
-import { Link, Redirect } from "react-router-dom";
-import moment from 'moment'
+import { Link } from "react-router-dom";
 
 import UserForm from "../User/Form";
 
