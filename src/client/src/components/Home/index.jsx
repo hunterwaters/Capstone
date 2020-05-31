@@ -35,7 +35,8 @@ class Home extends React.Component {
     return (
       <div className="container">
         <div className="row">
-          <h1 className="center blue-text"> Bunny Studio</h1>
+          <h1 className="center blue-text"> Stay Organized.</h1>
+    
           <UserForm />
         </div>
         <div className="row">
