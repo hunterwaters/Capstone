@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const UserTacks = mongoose.Schema({
+const UserTacks =  new mongoose.Schema({
   description: {
     type: String,
     required: "{PATH} is required"

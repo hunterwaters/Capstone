@@ -10,7 +10,6 @@
     "client": "npm start --prefix client",
     "server": "nodemon server.js",
     "dev": "concurrently --kill-others \"npm run server\" \"npm run client\"",
-    "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build",
     "deploy": "git push heroku master"
   },
   "author": "Clint Maruti",
@@ -19,14 +18,14 @@
     "concurrently": "^5.0.1",
     "cross-env": "^6.0.3",
     "dotenv": "^8.2.0",
-    "nodemon": "^2.0.2",
+    "nodemon": "^2.0.4",
     "supertest": "^4.0.2"
   },
   "dependencies": {
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
     "express": "^4.17.1",
-    "mongoose": "^5.8.0"
+    "mongoose": "^5.9.16"
   },
   "jest": {
     "testEnvironment": "node",
